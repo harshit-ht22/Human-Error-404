@@ -216,7 +216,9 @@ faster intervention, better resource utilization, and increased public trust.
 ##👥 **TEAM INFORMATION**
 
 *Team Name:* Human Error 404
+
 *Hackathon:* Hack The Winter – The Second Wave
+
 *Theme:* Governance
 
 **Team Members**
