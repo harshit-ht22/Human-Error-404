@@ -163,30 +163,45 @@ The current version demonstrates system behavior using simulated data
 to reflect real-world workflows and escalation logic.
 
 
+
 🔮**ROUND-2 IMPLEMENTATION PLAN**
 
-In the second round, the project will move from a conceptual prototype
-to a partially functional system demonstrating real-world feasibility.
+In Round-2, the project will move beyond conceptual demonstration
+towards validating real-world feasibility of the proposed system.
 
-*Planned enhancements include:*
+The focus of Round-2 will be on depth rather than expansion, including:
 
-Backend integration for dynamic issue creation and SLA tracking
+- Integration of a lightweight backend to simulate live issue creation,
+  SLA timers, and escalation transitions
+- Demonstration of one real infrastructure asset using a low-cost sensor
+  (e.g., garbage bin fill level or streetlight status)
+- Live visualization of escalation when SLA thresholds are crossed
+- Verification logic to prevent issue closure without objective confirmation
+- End-to-end demo from detection to enforcement on the live dashboard
 
-Hardware demonstration using one public asset (e.g., garbage bin or streetlight)
+The goal of Round-2 is to prove that the proposed governance workflows
+can operate reliably with real signals and enforced accountability.
 
-Live escalation and verification workflow demonstration
 
-End-to-end system execution from detection to closure
 
-🧪 Hackathon Scope
+##🧪 **Round-1 Scope:**
 
-For this hackathon:
 
-One infrastructure module is demonstrated
+For Round-1, the project focuses on demonstrating system thinking,
+governance workflows, and feasibility through a functional prototype.
 
-AI logic is represented through simulation
+*The scope of this round includes:*
+- A live administrative dashboard representing city system health
+- Simulated data to demonstrate issue creation, SLA tracking, and escalation
+- End-to-end workflow visualization from detection to resolution
+- Clear articulation of escalation and verification logic
+- Architecture and diagrams explaining system behavior
 
-The focus is on system thinking, feasibility, and scalability
+The emphasis in Round-1 is on clarity, originality, and feasibility,
+rather than full-scale deployment.
+
+
+
 
 🏆 **CONCLUSION**
 City Grid Monitor transforms civic governance from reactive complaint handling
@@ -194,6 +209,7 @@ to proactive, system-aware, and accountable administration.
 
 By making risk, delay, and responsibility visible, the platform enables
 faster intervention, better resource utilization, and increased public trust.
+
 
 
 👥 **TEAM INFORMATION**
