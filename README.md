@@ -119,6 +119,36 @@ City Grid Monitor follows a rule-based escalation mechanism:
 - If an SLA is missed, the system escalates the issue to higher authorities
 - Issues are closed only after verification confirms resolution
 
+
+
+## 🧭 Dashboard Decision Flow
+
+```mermaid
+flowchart LR
+    A[Administrator Opens Dashboard] --> B[System Health Overview]
+    B --> C{Any Critical Alerts?}
+
+    C -->|Yes| D[View Escalated / High-Risk Issues]
+    C -->|No| E[Monitor Zone Performance]
+
+    D --> F[Review Issue Details]
+    F --> G{SLA Breached?}
+
+    G -->|Yes| H[Trigger Auto-Escalation]
+    G -->|No| I[Continue Monitoring]
+
+    H --> J[Assign to Higher Authority]
+    J --> K[Track Resolution Status]
+
+    K --> L[Verification Required]
+    L --> M{Verified?}
+
+    M -->|Yes| N[Issue Closed]
+    M -->|No| O[Reopen & Escalate]
+
+    E --> K
+```
+
 This prevents negligence, delays, and false closures.
 
 ---
