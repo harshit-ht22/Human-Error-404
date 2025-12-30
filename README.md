@@ -197,21 +197,26 @@ to reflect real-world workflows and escalation logic.
 
 ##🔮**ROUND-2 IMPLEMENTATION PLAN**
 
-In Round-2, the project will move beyond conceptual demonstration
-towards validating real-world feasibility of the proposed system.
 
-The focus of Round-2 will be on depth rather than expansion, including:
+In Round-2, the project will focus on strengthening system realism
+and governance feasibility through deeper software implementation.
 
-- Integration of a lightweight backend to simulate live issue creation,
+*Planned enhancements include:*
+- Integration of a lightweight backend to enable real-time issue creation,
   SLA timers, and escalation transitions
-- Demonstration of one real infrastructure asset using a low-cost sensor
-  (e.g., garbage bin fill level or streetlight status)
-- Live visualization of escalation when SLA thresholds are crossed
-- Verification logic to prevent issue closure without objective confirmation
-- End-to-end demo from detection to enforcement on the live dashboard
+- Use of simulated but realistic data streams to represent infrastructure
+  signals and citizen inputs
+- Live demonstration of automatic escalation when SLA thresholds are crossed
+- Enforcement of verification logic to prevent premature issue closure
+- End-to-end execution of governance workflows on the live dashboard
 
-The goal of Round-2 is to prove that the proposed governance workflows
-can operate reliably with real signals and enforced accountability.
+-The emphasis in Round-2 is on validating accountability mechanisms
+and decision-making logic rather than physical hardware deployment.
+
+-While hardware integration is feasible, the current phase prioritizes
+governance logic and system enforcement, which are independent of
+specific sensing technologies.
+
 
 ---
 
