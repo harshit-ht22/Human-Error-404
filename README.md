@@ -154,6 +154,7 @@ flowchart TD
 **This workflow ensures that no issue is resolved without objective confirmation
 and that accountability is enforced systematically.**
 
+
 🌐 **LIVE DEMO**
 
 🔗 Live Dashboard:
@@ -162,9 +163,9 @@ https://city-grid-monitor.lovable.app
 The current version demonstrates system behavior using simulated data
 to reflect real-world workflows and escalation logic.
 
+---
 
-
-🔮**ROUND-2 IMPLEMENTATION PLAN**
+##🔮**ROUND-2 IMPLEMENTATION PLAN**
 
 In Round-2, the project will move beyond conceptual demonstration
 towards validating real-world feasibility of the proposed system.
@@ -182,7 +183,7 @@ The focus of Round-2 will be on depth rather than expansion, including:
 The goal of Round-2 is to prove that the proposed governance workflows
 can operate reliably with real signals and enforced accountability.
 
-
+---
 
 ##🧪 **Round-1 Scope:**
 
@@ -201,7 +202,7 @@ The emphasis in Round-1 is on clarity, originality, and feasibility,
 rather than full-scale deployment.
 
 
-
+---
 
 ##🏆 **CONCLUSION**
 City Grid Monitor transforms civic governance from reactive complaint handling
@@ -210,7 +211,7 @@ to proactive, system-aware, and accountable administration.
 By making risk, delay, and responsibility visible, the platform enables
 faster intervention, better resource utilization, and increased public trust.
 
-
+---
 
 ##👥 **TEAM INFORMATION**
 
