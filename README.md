@@ -247,6 +247,8 @@ faster intervention, better resource utilization, and increased public trust.
 
 *Team Name:* Human Error 404
 
+*College:* GLA University, Greater Noida
+
 *Hackathon:* Hack The Winter – The Second Wave
 
 *Theme:* Governance
