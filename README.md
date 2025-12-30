@@ -1,4 +1,4 @@
-# City Grid Monitor  
+# CITY GRID MONITOR 
 **From Complaint-Driven Governance to Self-Aware Cities**
 
 ##  PROBLEM STATEMENT
@@ -203,7 +203,7 @@ rather than full-scale deployment.
 
 
 
-🏆 **CONCLUSION**
+##🏆 **CONCLUSION**
 City Grid Monitor transforms civic governance from reactive complaint handling
 to proactive, system-aware, and accountable administration.
 
@@ -212,7 +212,7 @@ faster intervention, better resource utilization, and increased public trust.
 
 
 
-👥 **TEAM INFORMATION**
+##👥 **TEAM INFORMATION**
 
 *Team Name:* Human Error 404
 *Hackathon:* Hack The Winter – The Second Wave
