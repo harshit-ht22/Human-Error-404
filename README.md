@@ -329,7 +329,7 @@ By making **risk, delay, and responsibility visible**, the platform enables:
 ---
 
 
-###👥 **TEAM INFORMATION**
+## 👥 **TEAM INFORMATION**
 
 *Team Name:* Human Error 404
 
