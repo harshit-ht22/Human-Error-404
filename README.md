@@ -239,12 +239,107 @@ rather than full-scale deployment.
 
 ---
 
-##🏆 **CONCLUSION**
-City Grid Monitor transforms civic governance from reactive complaint handling
-to proactive, system-aware, and accountable administration.
+🚀 ##**Round-2 Implementation (Completed)**
 
-By making risk, delay, and responsibility visible, the platform enables
-faster intervention, better resource utilization, and increased public trust.
+Objective: Strengthen realism and execution depth.
+
+Implemented in Round-2:
+
+✅ **Backend Integration**
+
+Node.js + Express backend
+
+APIs for issue creation, verification, and resolution
+
+✅ **SLA Timers & Escalation**
+
+Time-based SLA breach detection
+
+Automatic escalation logic
+
+✅ **Verification Enforcement**
+
+Issues cannot be closed without verification
+
+Prevents false resolution
+
+✅ **End-to-End Live Workflow**
+
+Dashboard connected to backend
+
+Real-time state updates
+
+✅ **Citizen Transparency Layer**
+
+Separate citizen dashboard
+
+Public visibility of verified resolutions
+
+Hardware integration was intentionally deferred to prioritize governance logic, which is independent of specific sensing technologies.
+
+---
+
+🧱 **System Design Documentation**
+
+The repository includes / will include:
+
+High-Level System Architecture Diagram
+
+Data Flow Diagrams (DFDs)
+
+Logical Database Schema
+
+SLA & escalation rule mapping
+
+(Diagrams added separately as images)
+
+📈 **Scalability & Future Growth**
+
+The system is designed to scale through:
+
+Modular backend services
+
+Zone-based data partitioning
+
+Rule-driven enforcement engine
+
+Easy integration with existing government platforms
+
+Future extensions include:
+
+Real sensor integration
+
+Predictive failure analytics
+
+Department-specific dashboards
+
+Government SSO authentication
+
+---
+
+###🤖 **AI Usage Declaration**
+
+AI tools (such as Lovable and LLMs) were used only for repetitive or basic UI scaffolding tasks.
+
+All decision-making logic, SLA rules, escalation mechanisms, verification workflows, and system architecture were manually designed and implemented.
+
+No autonomous or decision-making agents were used.
+
+---
+
+###🏆 **Conclusion**
+
+City Grid Monitor transforms civic governance from reactive complaint handling to a proactive, system-aware, and accountable model.
+
+By making risk, delay, and responsibility visible, the platform enables:
+
+Faster intervention
+
+Better resource utilization
+
+Stronger administrative accountability
+
+Increased citizen trust
 
 ---
 
