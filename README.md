@@ -275,7 +275,7 @@ Strengthen system realism and governance feasibility through deeper software exe
 
 ---
 
-## 🧱 *System Design Documentation*
+### 🧱 **System Design Documentation**
 
 The repository includes / will include the following system design artifacts:
 
@@ -284,6 +284,7 @@ The repository includes / will include the following system design artifacts:
 - Logical Database Schema
 - SLA & escalation rule mapping
   
+  ## *High-Level System Architecture*
 ```mermaid
 flowchart LR
     Citizen[Citizen Interface] -->|Issue View / Status Check| Frontend
@@ -297,9 +298,90 @@ flowchart LR
     SLAEngine -->|Escalation Trigger| Backend
     Backend -->|Verified Issues| Frontend
 ```
+# *“This shows how UI, backend, SLA engine, and data layer interact.”*
 
 ---
 
+## *End-to-End Governance Workflow (DFD)*
+```mermaid
+flowchart TD
+    A[Issue Occurs / Complaint Raised]
+    B[Validation & De-duplication]
+    C[Risk & Priority Assessment]
+    D[SLA Assignment]
+    E[Authority Action]
+    F[Verification Step]
+    G[Issue Resolved]
+    H[Auto Escalation]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F -->|Verified| G
+    F -->|Not Verified / SLA Breach| H
+    H --> E
+```
+# *“No issue can reach resolution without verification.”*
+
+---
+
+## *SLA & Escalation Logic*
+```mermaid
+flowchart LR
+    Low[Low Risk Issue] -->|48 hrs SLA| L1[Local Authority]
+    Medium[Medium Risk Issue] -->|24 hrs SLA| L1
+    High[High Risk Issue] -->|12 hrs SLA| L2[Zonal Authority]
+    Critical[Critical Issue] -->|4 hrs SLA| L3[City Authority]
+
+    L1 -->|SLA Breach| L2
+    L2 -->|SLA Breach| L3
+```
+# *“Escalation is automatic, not dependent on manual follow-ups.”*
+
+---
+
+## *Database Schema*
+```mermaid
+erDiagram
+    ISSUE {
+        string issueId
+        string publicAsset
+        string zone
+        string jurisdiction
+        string riskLevel
+        int slaMinutes
+        int timeSinceMinutes
+        string resolutionStatus
+        boolean verified
+        string responsibleAuthority
+    }
+
+    AUTHORITY {
+        string authorityId
+        string department
+        string level
+    }
+
+    ISSUE }o--|| AUTHORITY : assigned_to
+```
+# *“The schema tracks issue lifecycle and authority ownership.”*
+---
+
+## *Citizen Transparency Flow*
+```mermaid
+flowchart LR
+    VerifiedIssue[Verified Issue]
+    Publish[Publish to Citizen Dashboard]
+    CitizenView[Citizen Views Status]
+
+    VerifiedIssue --> Publish
+    Publish --> CitizenView
+```
+# *“Only verified resolutions are visible to citizens.”*
+
+---
 
 > Diagrams are added separately as images for clarity.
 
