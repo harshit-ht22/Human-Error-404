@@ -284,7 +284,7 @@ The repository includes / will include the following system design artifacts:
 - Logical Database Schema
 - SLA & escalation rule mapping
   
-  ## *High-Level System Architecture*
+  ## High-Level System Architecture
 ```mermaid
 flowchart LR
     Citizen[Citizen Interface] -->|Issue View / Status Check| Frontend
@@ -298,11 +298,11 @@ flowchart LR
     SLAEngine -->|Escalation Trigger| Backend
     Backend -->|Verified Issues| Frontend
 ```
-#### *“This shows how UI, backend, SLA engine, and data layer interact.”*
+> *“This shows how UI, backend, SLA engine, and data layer interact.”*
 
 ---
 
-## *End-to-End Governance Workflow (DFD)*
+## End-to-End Governance Workflow (DFD)
 ```mermaid
 flowchart TD
     A[Issue Occurs / Complaint Raised]
@@ -323,11 +323,11 @@ flowchart TD
     F -->|Not Verified / SLA Breach| H
     H --> E
 ```
-# *“No issue can reach resolution without verification.”*
+> *“No issue can reach resolution without verification.”*
 
 ---
 
-## *SLA & Escalation Logic*
+## SLA & Escalation Logic
 ```mermaid
 flowchart LR
     Low[Low Risk Issue] -->|48 hrs SLA| L1[Local Authority]
@@ -338,11 +338,11 @@ flowchart LR
     L1 -->|SLA Breach| L2
     L2 -->|SLA Breach| L3
 ```
-# *“Escalation is automatic, not dependent on manual follow-ups.”*
+> *“Escalation is automatic, not dependent on manual follow-ups.”*
 
 ---
 
-## *Database Schema*
+## Database Schema
 ```mermaid
 erDiagram
     ISSUE {
@@ -366,10 +366,10 @@ erDiagram
 
     ISSUE }o--|| AUTHORITY : assigned_to
 ```
-# *“The schema tracks issue lifecycle and authority ownership.”*
+> *“The schema tracks issue lifecycle and authority ownership.”*
 ---
 
-## *Citizen Transparency Flow*
+## Citizen Transparency Flow
 ```mermaid
 flowchart LR
     VerifiedIssue[Verified Issue]
@@ -379,13 +379,10 @@ flowchart LR
     VerifiedIssue --> Publish
     Publish --> CitizenView
 ```
-# *“Only verified resolutions are visible to citizens.”*
+> *“Only verified resolutions are visible to citizens.”*
 
 ---
 
-> Diagrams are added separately as images for clarity.
-
----
 
 ## 📈 Scalability & Future Growth
 
