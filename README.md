@@ -275,7 +275,7 @@ Strengthen system realism and governance feasibility through deeper software exe
 
 ---
 
-## 🧱 System Design Documentation
+## 🧱 *System Design Documentation*
 
 The repository includes / will include the following system design artifacts:
 
