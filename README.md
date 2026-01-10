@@ -298,7 +298,7 @@ flowchart LR
     SLAEngine -->|Escalation Trigger| Backend
     Backend -->|Verified Issues| Frontend
 ```
-# *“This shows how UI, backend, SLA engine, and data layer interact.”*
+#### *“This shows how UI, backend, SLA engine, and data layer interact.”*
 
 ---
 
