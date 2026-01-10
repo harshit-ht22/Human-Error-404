@@ -220,25 +220,6 @@ specific sensing technologies.
 
 ---
 
-##🧪 **Round-1 Scope:**
-
-
-For Round-1, the project focuses on demonstrating system thinking,
-governance workflows, and feasibility through a functional prototype.
-
-*The scope of this round includes:*
-- A live administrative dashboard representing city system health
-- Simulated data to demonstrate issue creation, SLA tracking, and escalation
-- End-to-end workflow visualization from detection to resolution
-- Clear articulation of escalation and verification logic
-- Architecture and diagrams explaining system behavior
-
-The emphasis in Round-1 is on clarity, originality, and feasibility,
-rather than full-scale deployment.
-
-
----
-
 ## 🚀 Round-2 Implementation (Completed)
 
 ### Objective
@@ -274,6 +255,106 @@ Strengthen system realism and governance feasibility through deeper software exe
 > Hardware integration was intentionally deferred in this phase to prioritize governance logic and system enforcement, which are independent of specific sensing technologies.
 
 ---
+
+## 🔗 Frontend–Backend Integration Overview
+
+City Grid Monitor is implemented as a **full-stack system** where the frontend and backend are cleanly separated but tightly integrated through APIs.
+
+The goal is to ensure that **UI actions directly reflect governance logic** enforced by the backend.
+
+---
+
+## 🖥️ Frontend Layer
+
+### Technology Stack
+- React + TypeScript
+- Component-based dashboard architecture
+- Client-side routing for role-based views
+- Deployed as a web application
+
+### Responsibilities
+The frontend is responsible for:
+
+- Rendering **Government Operations Dashboard**
+- Rendering **Citizen Transparency Dashboard**
+- Displaying real-time system metrics
+- Triggering actions such as:
+  - Issue verification
+  - Issue resolution
+- Visualizing SLA breaches, escalation levels, and risk zones
+
+### Key Frontend Views
+- `/dashboard` – Government dashboard
+- `/citizen` – Citizen-facing transparency view
+- `/issues` – Active enforcement cases
+- `/sla-breaches` – Escalated issues
+- `/pending-verification` – Issues awaiting verification
+
+The frontend **does not decide outcomes**.  
+All enforcement logic is delegated to the backend.
+
+---
+
+## ⚙️ Backend Layer
+
+### Technology Stack
+- Node.js
+- Express.js
+- RESTful API design
+- Deployed as a standalone web service
+
+### Responsibilities
+The backend acts as the **governance enforcement engine** and is responsible for:
+
+- Issue lifecycle management
+- SLA timer enforcement
+- Escalation rule execution
+- Verification validation
+- Preventing premature resolution
+- Maintaining authoritative system state
+
+### Core API Endpoints (Representative)
+
+- `GET /issues`  
+  Fetch all active issues with current SLA and status
+
+- `POST /issues`  
+  Create a new issue (simulated citizen/system input)
+
+- `PUT /issues/:id/verify`  
+  Verify an issue after field confirmation
+
+- `PUT /issues/:id/resolve`  
+  Resolve an issue **only if verification is complete**
+
+All SLA calculations and escalation transitions are handled **server-side**, ensuring enforcement integrity.
+
+---
+
+## 🔁 Frontend–Backend Interaction Flow
+
+```mermaid
+sequenceDiagram
+    participant UI as Frontend Dashboard
+    participant API as Backend API
+    participant SLA as SLA Engine
+
+    UI->>API: Fetch issues
+    API->>UI: Issue list + SLA status
+
+    UI->>API: Verify issue
+    API->>SLA: Check verification rules
+    SLA->>API: Verification allowed
+    API->>UI: Updated issue status
+
+    UI->>API: Resolve issue
+    API->>SLA: Check SLA & verification
+    SLA->>API: Resolution approved
+    API->>UI: Issue resolved
+```
+
+---
+
 
 ### 🧱 **System Design Documentation**
 
