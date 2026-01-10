@@ -239,109 +239,95 @@ rather than full-scale deployment.
 
 ---
 
-🚀 ##**Round-2 Implementation (Completed)**
+## 🚀 Round-2 Implementation (Completed)
 
-Objective: Strengthen realism and execution depth.
+### Objective
+Strengthen system realism and governance feasibility through deeper software execution.
 
-Implemented in Round-2:
+### Implemented in Round-2
 
-✅ **Backend Integration**
+#### ✅ Backend Integration
+- Node.js + Express based backend implementation
+- REST APIs for:
+  - Issue creation
+  - Verification
+  - Resolution updates
 
-Node.js + Express backend
+#### ✅ SLA Timers & Escalation Logic
+- Time-based SLA breach detection
+- Automatic escalation when SLA thresholds are crossed
+- Clear authority-level transitions
 
-APIs for issue creation, verification, and resolution
+#### ✅ Verification Enforcement
+- Issues cannot be marked as resolved without verification
+- Prevents false or premature closure of complaints
 
-✅ **SLA Timers & Escalation**
+#### ✅ End-to-End Live Workflow
+- Government dashboard connected to backend APIs
+- Real-time state updates on verification and resolution
 
-Time-based SLA breach detection
+#### ✅ Citizen Transparency Layer
+- Separate citizen-facing dashboard
+- Public visibility of only **verified** resolutions
 
-Automatic escalation logic
-
-✅ **Verification Enforcement**
-
-Issues cannot be closed without verification
-
-Prevents false resolution
-
-✅ **End-to-End Live Workflow**
-
-Dashboard connected to backend
-
-Real-time state updates
-
-✅ **Citizen Transparency Layer**
-
-Separate citizen dashboard
-
-Public visibility of verified resolutions
-
-Hardware integration was intentionally deferred to prioritize governance logic, which is independent of specific sensing technologies.
+> **Note:**  
+> Hardware integration was intentionally deferred in this phase to prioritize governance logic and system enforcement, which are independent of specific sensing technologies.
 
 ---
 
-🧱 **System Design Documentation**
+## 🧱 System Design Documentation
 
-The repository includes / will include:
+The repository includes / will include the following system design artifacts:
 
-High-Level System Architecture Diagram
+- High-Level System Architecture Diagram
+- Data Flow Diagrams (DFDs)
+- Logical Database Schema
+- SLA & escalation rule mapping
 
-Data Flow Diagrams (DFDs)
+> Diagrams are added separately as images for clarity.
 
-Logical Database Schema
+---
 
-SLA & escalation rule mapping
-
-(Diagrams added separately as images)
-
-📈 **Scalability & Future Growth**
+## 📈 Scalability & Future Growth
 
 The system is designed to scale through:
 
-Modular backend services
+- Modular backend services
+- Zone-based data partitioning
+- Rule-driven enforcement engine
+- Seamless integration with existing government platforms
 
-Zone-based data partitioning
-
-Rule-driven enforcement engine
-
-Easy integration with existing government platforms
-
-Future extensions include:
-
-Real sensor integration
-
-Predictive failure analytics
-
-Department-specific dashboards
-
-Government SSO authentication
+### Planned Extensions
+- Real sensor integration
+- Predictive failure analytics
+- Department-specific dashboards
+- Government SSO authentication
 
 ---
 
-###🤖 **AI Usage Declaration**
+## 🤖 AI Usage Declaration
 
-AI tools (such as Lovable and LLMs) were used only for repetitive or basic UI scaffolding tasks.
+AI tools (such as Lovable and LLMs) were used **only for repetitive or basic UI scaffolding tasks**.
 
-All decision-making logic, SLA rules, escalation mechanisms, verification workflows, and system architecture were manually designed and implemented.
+All **decision-making logic, SLA rules, escalation mechanisms, verification workflows, and system architecture** were **manually designed and implemented**.
 
 No autonomous or decision-making agents were used.
 
 ---
 
-###🏆 **Conclusion**
+## 🏆 Conclusion
 
-City Grid Monitor transforms civic governance from reactive complaint handling to a proactive, system-aware, and accountable model.
+**City Grid Monitor transforms civic governance** from reactive complaint handling to a **proactive, system-aware, and accountable model**.
 
-By making risk, delay, and responsibility visible, the platform enables:
+By making **risk, delay, and responsibility visible**, the platform enables:
 
-Faster intervention
-
-Better resource utilization
-
-Stronger administrative accountability
-
-Increased citizen trust
+- Faster intervention
+- Better resource utilization
+- Stronger administrative accountability
+- Increased citizen trust
 
 ---
+
 
 ##👥 **TEAM INFORMATION**
 
