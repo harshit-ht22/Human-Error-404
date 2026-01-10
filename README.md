@@ -283,6 +283,23 @@ The repository includes / will include the following system design artifacts:
 - Data Flow Diagrams (DFDs)
 - Logical Database Schema
 - SLA & escalation rule mapping
+  
+```mermaid
+flowchart LR
+    Citizen[Citizen Interface] -->|Issue View / Status Check| Frontend
+    Authority[Government Authority] -->|Monitoring & Actions| Frontend
+
+    Frontend -->|REST API Requests| Backend
+
+    Backend -->|Issue Data| Database[(Issue Store)]
+    Backend -->|SLA Rules| SLAEngine[SLA & Escalation Engine]
+
+    SLAEngine -->|Escalation Trigger| Backend
+    Backend -->|Verified Issues| Frontend
+```
+
+---
+
 
 > Diagrams are added separately as images for clarity.
 
