@@ -185,16 +185,6 @@ flowchart TD
 and that accountability is enforced systematically.**
 
 
-🌐 **LIVE DEMO**
-
-🔗 Live Dashboard:
-https://city-grid-monitor.lovable.app
-
-The current version demonstrates system behavior using simulated data
-to reflect real-world workflows and escalation logic.
-
----
-
 ##🔮**ROUND-2 IMPLEMENTATION PLAN**
 
 
