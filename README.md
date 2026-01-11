@@ -492,6 +492,41 @@ No autonomous or decision-making agents were used.
 
 ---
 
+## 🌐 Live Demonstration & Deployment
+
+The City Grid Monitor system has been deployed as a full-stack web application to demonstrate real governance workflows.
+
+### 🔹 Final Deployed Application (Round-2)
+- **Frontend (Government & Citizen Dashboard):**  
+  https://city-grid-monitor-2722.vercel.app
+
+- **Backend (SLA & Enforcement Engine):**  
+  https://city-grid-monitor.onrender.com
+
+This deployment demonstrates:
+- Live issue lifecycle management
+- SLA timer enforcement
+- Automatic escalation logic
+- Verification-controlled resolution
+- End-to-end governance workflow execution
+
+---
+
+### 🔹 UI Prototype & Design Reference (Round-1)
+- **Design Prototype (Lovable):**  
+  https://city-grid-monitor.lovable.app
+
+This prototype was used in Round-1 to demonstrate:
+- Dashboard structure
+- Governance workflows
+- Zone-based risk visualization
+- Administrative interaction design
+
+> Note: Some SPA routes may show a 404 on direct refresh due to deployment configuration; application functionality remains unaffected.
+
+
+---
+
 ## 🏆 Conclusion
 
 **City Grid Monitor transforms civic governance** from reactive complaint handling to a **proactive, system-aware, and accountable model**.
@@ -504,7 +539,6 @@ By making **risk, delay, and responsibility visible**, the platform enables:
 - Increased citizen trust
 
 ---
-
 
 ## 👥 **Team Information**
 
