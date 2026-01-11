@@ -530,6 +530,45 @@ By making **risk, delay, and responsibility visible**, the platform enables:
 
 ---
 
+## 👥 Team Contributions
+
+The development of **City Grid Monitor** was a collaborative effort, with each team member contributing to clearly defined technical and system-level components.
+
+### 👤 Harshit Thakur (Team Leader)
+- Conceptualization of the core problem statement and governance approach
+- Complete design and development of the **Government Operations Dashboard**
+- Frontend implementation using React and TypeScript
+- Backend development using Node.js and Express
+- Implementation of SLA timers and escalation logic
+- Deployment of backend services and end-to-end system testing
+- Overall system integration and team coordination
+
+### 👤 Yashashvi Jadoan
+- UI/UX planning support and design feedback
+- Assistance in workflow visualization and dashboard interaction flows
+- Integration of frontend with backend APIs
+- Contribution to system architecture understanding and documentation
+- Support in testing dashboard usability and navigation
+
+### 👤 Priyanshu Singh
+- Design and implementation support for the **Citizen Transparency Dashboard**
+- Role-based navigation planning (Government vs Citizen views)
+- Assistance in frontend-backend integration testing
+- Implementation of verification rules
+- Contribution to scalability and future enhancement planning
+
+### 👤 Anvesha Sharma
+- Research on urban governance workflows and accountability mechanisms
+- Problem statement refinement and articulation
+- Documentation support for Round-1 and Round-2 submissions
+- Data flow analysis and verification logic validation
+- Assistance in demo preparation and presentation structuring
+
+> All team members actively contributed to technical development, system design, and documentation.  
+> Contributions are reflected through code commits, feature implementation, and system-level integration.
+
+---
+
 ## 👥 **Team Information**
 
 *Team Name:* Human Error 404
@@ -540,7 +579,7 @@ By making **risk, delay, and responsibility visible**, the platform enables:
 
 *Theme:* Governance
 
-**Team Members**
+# **Team Members**
 
 Yashashvi Jadoan
 
